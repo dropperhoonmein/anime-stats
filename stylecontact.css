@@ -1,0 +1,110 @@
+*{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #121212;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.heading img{
+    width: 300px;
+}
+.icon img{
+    width: 60px;
+    cursor: pointer;
+    transform: translateX(160px);
+    opacity: 1;
+}
+.navbar:hover .icon{
+    opacity: 0;
+    transition: 200ms ease-in-out;
+}
+.navbar:hover{
+    transition: 750ms ease-in-out;
+    transform: translateX(-770px);
+    background-color: #121212d3;
+    height: 100%;
+}
+.navbar{
+    transform: translateX(-1030px);
+    background-color: #121212;
+    text-align: center;
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    height: 100%;
+}
+ul{
+    margin: 20px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    padding: 20px 0px;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.navbar a:hover{
+    font-size: 18px;
+    transition: 400ms ease-in-out;
+}
+h2{
+    color: rgb(72, 72, 72);
+    margin: 20px;
+}
+.container{
+    width: 50%;
+    min-width: 250px;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-radius: 7px;
+}
+.container input{
+    width: 60%;
+    margin: auto;
+    margin: 20px ;
+    border-radius: 25px;
+    height: 35px;
+    font-size: 17px;
+    border: none;
+}
+.container textarea{
+    width: 60%;
+    margin: auto;
+    margin: 15px ;
+    border-radius: 25px;
+    font-size: 17px;
+    border: none;
+}
+button{
+    width: 200px;
+    background-color: rgb(255, 101, 101);
+    border-color: white;
+    color: white;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px;
+}
+button:hover{
+    transform: scale(1.02);
+    transition: 500ms ease-in-out;
+    box-shadow: 1px 1px 10px rgb(255, 101, 101);
+}

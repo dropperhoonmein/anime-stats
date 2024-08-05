@@ -1,0 +1,119 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border-radius: 10px;
+    height: 250px;
+    width: 450px;
+    box-shadow: 5px 5px 5px rgb(48, 48, 48);
+    margin: auto;
+    cursor: pointer;
+    background-color: rgb(251, 251, 251);
+    text-align: center;
+}
+.container img{
+    width: 75%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(48, 48, 48);
+    transform: translateY(-70px);
+    display: flex;
+    justify-content:center ;
+}
+.container h1{
+    display: inline-block;
+    transform: translateY(-85px);
+    cursor: auto;
+}
+.info{
+    display: inline-block;
+    width: 90%;
+    opacity: 0;
+    cursor: auto;
+    transform: translateY(-80px);
+}
+.container:hover{
+    height: 450px;
+    transition: 700ms ease-in-out;
+}
+.container:hover .info{
+    opacity: 1;
+    transition: 700ms ease-in-out;
+}
+.container:hover button{
+    opacity: 1;
+    transition: 1000ms 500ms ease-in-out ;
+}
+.container button{
+    width: 200px;
+    font-size: 15px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-70px);
+}
+.container button:hover{
+    background-color: black;
+    color: white;
+    transition: 500ms ease-in-out;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-100px);
+
+}
+.rating p{
+    text-decoration: none;
+    color: black;
+}
+.imdb{
+    padding: 0px 40px ;
+}
+.crunchyroll{
+    padding: 0px 40px ;
+}
+a{
+    text-decoration: none;
+}
+/* Responsive */
+@media (max-width: 675px) {
+    .child{
+        width: 40%;
+        margin: 10px;
+    }
+    .container h3{
+        margin: 2px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 360px) {
+    .child{
+        width: 75%;
+        margin: 5px;
+    }
+    .heading img{
+        width: 60%;
+    }
+    .container h3{
+        margin: 4px;
+        font-size: 14px;
+    }
+    .icon img{ 
+        width: 40px;
+    }
+    footer{
+        margin: 20px 0px 0px 0px;
+    }
+}
